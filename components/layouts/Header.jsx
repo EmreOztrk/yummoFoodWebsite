@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='container mx-auto flex justify-between items-center mt-2 bg-transparent relative z-40'>
-        <div className='relative w-52 h-16'>
+        <div className='relative w-52 h-16 cursor-pointer'>
             <Image src={"/images/logo_.png"} alt="logo" layout='fill'/>
         </div>
         <div>
