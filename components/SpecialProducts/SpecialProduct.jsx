@@ -16,7 +16,7 @@ const SpecialProduct = () => {
                 <p className='leading-4 text-brown'>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis..</p>
             </div>
             <div>
-                <button className='flex items-center font-bold'>ORDER NOW <span><GiKnifeFork/></span></button>
+                <button className='flex items-center font-bold hover:text-red transition-all duration-300'>ORDER NOW <span><GiKnifeFork/></span></button>
             </div>
         </div>
     </div>
