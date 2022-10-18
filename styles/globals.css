@@ -35,5 +35,8 @@ body {
   transform: scaleX(1);
 }
 .btn-primary{
-  @apply w-48 h-12 bg-primary text-crown font-bold hover:bg-crown hover:text-white transition-all duration-700;
+  @apply w-48 h-12 bg-primary text-brown font-bold hover:bg-brown hover:text-white transition-all duration-700;
+}
+.btn-secondary{
+  @apply w-48 h-12 bg-red text-white font-bold hover:bg-transparent transition-all duration-700 rounded-full border-red border;
 }

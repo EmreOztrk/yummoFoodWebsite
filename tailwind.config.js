@@ -19,7 +19,7 @@ module.exports = {
         primary:"#ffc637",
         secondary:"#222",
         red:"#e53e47",
-        crown:"#3c3c3c",
+        brown:"#3c3c3c",
       },
       fontFamily:{
         montserat: ['Montserrat', "sans-serif"],

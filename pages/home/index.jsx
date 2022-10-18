@@ -3,6 +3,7 @@ import Carraousel from '../../components/Carraousel'
 import Header from '../../components/layouts/Header'
 import Story from '../../components/Story'
 import Menu from '../../components/Menu'
+import Special from '../../components/Special'
 
 const index = () => {
   return (
@@ -11,6 +12,7 @@ const index = () => {
         <Carraousel/>
         <Story/>
         <Menu/>
+        <Special/>
     </div>
   )
 }
