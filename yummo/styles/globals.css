@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  @apply font-montserat;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.deneme{
+  position: relative;
+  transition: .5s;
+
+}
+.deneme::after{
+  content: '';
+  position:absolute;
+  bottom: -8px;
+  transform-origin: left;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  background-color: black;
+  transition: .5s;
+}
+.deneme:hover::after{
+  transform: scaleX(1);
+}
+.btn-primary{
+  @apply w-48 h-12 bg-primary text-crown font-bold hover:bg-crown hover:text-white transition-all duration-700;
+}
