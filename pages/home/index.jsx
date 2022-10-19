@@ -5,6 +5,7 @@ import Story from '../../components/Story'
 import Menu from '../../components/Menu'
 import Special from '../../components/Special'
 import Different from '../../components/Different'
+import Blog from '../../components/Blog'
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
         <Menu/>
         <Special/>
         <Different/>
+        <Blog/>
     </div>
   )
 }

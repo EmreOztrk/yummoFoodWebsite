@@ -40,3 +40,6 @@ body {
 .btn-secondary{
   @apply w-48 h-12 bg-red text-white font-bold hover:bg-transparent transition-all duration-700 rounded-full border-red border;
 }
+.btn-third{
+  @apply w-48 h-12 bg-transparent text-white font-bold hover:bg-red transition-all duration-700 rounded-full border-white border-2 hover:border-red;
+}

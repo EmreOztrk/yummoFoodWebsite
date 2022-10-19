@@ -20,6 +20,7 @@ module.exports = {
         secondary:"#222",
         red:"#e53e47",
         brown:"#3c3c3c",
+        cream:"#f6f6f6",
       },
       fontFamily:{
         montserat: ['Montserrat', "sans-serif"],
