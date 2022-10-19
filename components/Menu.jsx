@@ -3,6 +3,7 @@ import React from 'react'
 import Title from './ui/Title'
 
 const Menu = () => {
+  const deneme = 0;
   return (
     <div className='relative w-full h-[595px]'>
         <div className='absolute w-full h-[595px] bg-gradient-to-r from-black to-brown -z-20'>
