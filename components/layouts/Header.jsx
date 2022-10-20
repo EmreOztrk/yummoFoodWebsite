@@ -1,21 +1,26 @@
 import Image from 'next/image'
 import React from 'react'
+import HeaderLinkItem from '../Links/HeaderLinkItem'
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Header = () => {
   return (
-    <div className='container mx-auto flex justify-between items-center mt-2 bg-transparent relative z-40'>
+    <div className='container sm:mx-auto flex justify-between items-center mt-2 sm:px-0 px-10 bg-transparent relative z-40'>
         <div className='relative w-52 h-16 cursor-pointer'>
             <Image src={"/images/logo_.png"} alt="logo" layout='fill'/>
         </div>
-        <div>
-            <ul className='flex gap-x-5'>
-                <li><a href="#" className='font-bold relative transition-all duration-300 after:content-[""] after:absolute after:-bottom-2 after:origin-left after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:h-[3px] after:bg-red after:transition after:duration-300 hover:text-red'>HOME</a></li>
-                <li><a href="#" className='font-bold relative transition-all duration-300 after:content-[""] after:absolute after:-bottom-2 after:origin-left after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:h-[3px] after:bg-red after:transition after:duration-300 hover:text-red'>ABOUT US</a></li>
-                <li><a href="#" className='font-bold relative transition-all duration-300 after:content-[""] after:absolute after:-bottom-2 after:origin-left after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:h-[3px] after:bg-red after:transition after:duration-300 hover:text-red'>MENU</a></li>
-                <li><a href="#" className='font-bold relative transition-all duration-300 after:content-[""] after:absolute after:-bottom-2 after:origin-left after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:h-[3px] after:bg-red after:transition after:duration-300 hover:text-red'>RESERVATION</a></li>
-                <li><a href="#" className='font-bold relative transition-all duration-300 after:content-[""] after:absolute after:-bottom-2 after:origin-left after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:h-[3px] after:bg-red after:transition after:duration-300 hover:text-red'>BLOG</a></li>
-                <li><a href="#" className='font-bold relative transition-all duration-300 after:content-[""] after:absolute after:-bottom-2 after:origin-left after:left-0 after:w-full after:scale-x-0 hover:after:scale-x-100 after:h-[3px] after:bg-red after:transition after:duration-300 hover:text-red'>CONTACT US</a></li>
+        <div className='flex '>
+            <ul className='sm:flex gap-x-5 hidden'>
+                <li><HeaderLinkItem linkItem={"#"}>Home</HeaderLinkItem></li>
+                <li><HeaderLinkItem linkItem={"#"}>About Us</HeaderLinkItem></li>
+                <li><HeaderLinkItem linkItem={"#"}>Menu</HeaderLinkItem></li>
+                <li><HeaderLinkItem linkItem={"#"}>Reservation</HeaderLinkItem></li>
+                <li><HeaderLinkItem linkItem={"#"}>Blog</HeaderLinkItem></li>
+                <li><HeaderLinkItem linkItem={"#"}>Contact Us</HeaderLinkItem></li>
             </ul>
+            <button className='sm:hidden display-block text-4xl cursor-pointer text-brown'>
+              <GiHamburgerMenu/>
+            </button>
         </div>
     </div>
   )

@@ -11,7 +11,7 @@ const BlogProduct = () => {
     <div>
         <div className='w-[360px] h-[434px] bg-cream' onMouseMove={() => setIsHoverModal(true)} onMouseOut={() => setIsHoverModal(false)}>
             <div className='relative w-[360px] h-[235px] bg-red'>
-                <div className={`absolute w-[360px] h-[235px] transition-all duration-300 ${isHoverModal === true && "opacity-20"}`}>
+                <div className={`absolute w-[360px] h-[235px] transition-all duration-700 ${isHoverModal === true && "opacity-20"}`}>
                     <Image src={"/images/news-img1.jpg"} alt="blog" layout='fill'/>
                 </div>
                 <span className={`text-white flex justify-center items-center w-full h-full text-5xl transition-all ${isHoverModal === true && 'duration-400 -translate-y-4'}`}>

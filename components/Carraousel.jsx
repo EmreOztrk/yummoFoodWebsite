@@ -8,7 +8,7 @@ const Carraousel = () => {
     function NextBtn({ onClick }) {
         return (
           <button
-            className="absolute z-20 text-2xl top-2/4 right-16 hover:bg-primary cursor-pointer bg-secondary flex items-center justify-center w-16 h-16 rounded-full text-white"
+            className="absolute hidden z-20 text-2xl top-2/4 right-16 hover:bg-primary cursor-pointer bg-secondary sm:flex items-center justify-center w-[70px] h-[70px]  rounded-full text-white"
             onClick={onClick}
           >
             <IoIosArrowForward />
@@ -19,7 +19,7 @@ const Carraousel = () => {
       function PrevBtn({ onClick }) {
         return (
           <button type='button'
-            className="absolute text-2xl z-20 top-2/4 left-16 hover:bg-primary  bg-secondary flex items-center justify-center w-[70px] h-[70px] rounded-full text-white mr-2"
+            className="absolute hidden text-2xl z-20 top-2/4 left-16 hover:bg-primary  bg-secondary sm:flex items-center justify-center w-[70px] h-[70px] rounded-full text-white mr-2"
             onClick={onClick}
           >
             
@@ -48,16 +48,16 @@ const Carraousel = () => {
         ],
       };
   return (
-        <div className=' -mt-[72px] -z-10'>
+        <div className=' sm:-mt-[72px] mt-2 -z-10'>
             <Slider {...settings} className="">
-                <div className='relative w-full h-screen'>
-                        <Image src={"/images/slider1.jpg"} alt="" layout='fill'/>
+                <div className='relative sm:w-full sm:h-screen w-full h-[231px]'>
+                        <Image src={"/images/slider1.jpg"} alt="" layout='fill' objectFit='cover'/>
                 </div>
-                <div className='relative w-full h-screen'>
-                        <Image src={"/images/slider2.jpg"} alt="" layout='fill'/>
+                <div className='relative sm:w-full sm:h-screen w-full h-[231px]'>
+                        <Image src={"/images/slider2.jpg"} alt="" layout='fill' objectFit='cover'/>
                 </div>
-                <div className='relative w-full h-screen'>
-                        <Image src={"/images/slider3.jpg"} alt="" layout='fill'/>
+                <div className='relative sm:w-full sm:h-screen w-full h-[231px]'>
+                        <Image src={"/images/slider3.jpg"} alt="" layout='fill' objectFit='cover'/>
                 </div>
             </Slider>
         </div>
