@@ -2,13 +2,21 @@ import Image from 'next/image'
 import React from 'react'
 import {AiOutlineClockCircle} from 'react-icons/ai'
 import {FaComments} from 'react-icons/fa'
+import {GiHouse} from 'react-icons/gi'
+import { useState } from 'react';
 
 const BlogProduct = () => {
+    const [isHoverModal, setIsHoverModal] = useState(false);
   return (
     <div>
-        <div className='w-[360px] h-[434px] bg-cream'>
-            <div className='relative w-[360px] h-[235px]'>
-                <Image src={"/images/news-img1.jpg"} alt="blog" layout='fill'/>
+        <div className='w-[360px] h-[434px] bg-cream' onMouseMove={() => setIsHoverModal(true)} onMouseOut={() => setIsHoverModal(false)}>
+            <div className='relative w-[360px] h-[235px] bg-red'>
+                <div className={`absolute w-[360px] h-[235px] transition-all duration-300 ${isHoverModal === true && "opacity-20"}`}>
+                    <Image src={"/images/news-img1.jpg"} alt="blog" layout='fill'/>
+                </div>
+                <span className={`text-white flex justify-center items-center w-full h-full text-5xl transition-all ${isHoverModal === true && 'duration-400 -translate-y-4'}`}>
+                    <GiHouse/>
+                </span>
             </div>
             
                 <div className='px-10 py-7 flex flex-col gap-y-5'>
@@ -31,3 +39,4 @@ const BlogProduct = () => {
 }
 
 export default BlogProduct
+

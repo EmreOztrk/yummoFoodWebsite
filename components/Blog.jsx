@@ -3,10 +3,12 @@ import React from 'react'
 import BlogProduct from './BlogProducts/BlogProduct'
 import Title from './ui/Title'
 
+
+
 const Blog = () => {
   return (
     <div className='container mx-auto mt-20 mb-[700px]'>
-       <div>
+       <div className={`cursor-pointer`}>
             <div className='text-center flex flex-col items-center'>
                 <div>
                     <Title addClass={"text-brown text-[40px]"}>From the Blog</Title>
