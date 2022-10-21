@@ -4,7 +4,7 @@ import Title from './ui/Title'
 
 const Story = () => {
   return (
-    <div className='container mx-auto flex sm:flex-row flex-col gap-y-10 items-center py-20'>
+    <div className='container mx-auto flex sm:flex-row flex-col gap-y-10 gap-x-2 items-center py-20'>
         <div className='sm:basis-2/4 text-center w-full flex flex-col sm:gap-y-2 gap-y-4'>
           <div className='flex flex-col'>
             <span><Title addClass={"text-red text-[50px] relative top-8"}>Discover</Title></span>
