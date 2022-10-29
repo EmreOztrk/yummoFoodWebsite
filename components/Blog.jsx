@@ -7,7 +7,7 @@ import Title from './ui/Title'
 
 const Blog = () => {
   return (
-    <div className='container mx-auto mt-20 mb-[700px]'>
+    <div className='container mx-auto mt-20 pb-20'>
        <div className={`cursor-pointer`}>
             <div className='text-center flex flex-col items-center'>
                 <div>

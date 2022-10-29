@@ -19,7 +19,9 @@ const Chef = () => {
                         <Image src={"/images/heading-dark.png"} alt="" layout='fill'/>
                     </div>
                 </div>
-                <div>
+                <div className='flex container mx-auto gap-x-5 py-20'>
+                    <Chefs/>
+                    <Chefs/>
                     <Chefs/>
                 </div>
             </div>
