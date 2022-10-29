@@ -18,7 +18,7 @@ const index = () => {
         <Special/>
         <Different/>
         <Blog/>
-        {/* <Chef/> */}
+        <Chef/>
     </div>
   )
 }
