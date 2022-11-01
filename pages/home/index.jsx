@@ -8,6 +8,7 @@ import Different from '../../components/Different'
 import Blog from '../../components/Blog'
 import Chef from '../../components/Chef'
 import Event from '../../components/Event'
+import Pattern from '../../components/Pattern'
 
 const index = () => {
   return (
@@ -21,6 +22,7 @@ const index = () => {
         <Blog/>
         <Chef/>
         <Event/>
+        <Pattern/>
     </div>
   )
 }
