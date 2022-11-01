@@ -21,6 +21,7 @@ module.exports = {
         red:"#e53e47",
         brown:"#3c3c3c",
         cream:"#f6f6f6",
+        cream_dark:"#f9f9f9",
       },
       fontFamily:{
         montserat: ['Montserrat', "sans-serif"],

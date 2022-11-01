@@ -1,15 +1,14 @@
-import Image from 'next/image'
 import React from 'react'
-import {FaCalendarAlt,FaClock} from 'react-icons/fa'
+import Image from 'next/image'
 import Title from '../ui/Title'
+import {FaCalendarAlt,FaClock} from 'react-icons/fa'
 
-const Events = () => {
+
+
+const Events_Two = () => {
   return (
     <div>
         <div className='flex flex-col sm:flex-row gap-x-5 w-full justify-between mt-12 h-[318px] items-center'>
-            <div className='relative w-[555px] h-full basis-2/4'>
-                <Image src={"/images/ev1.jpg"} alt="" layout='fill'/>
-            </div>
             <div className='basis-2/4 flex flex-col gap-y-5'>
                 <div className='flex gap-x-5'>
                     <div className='flex items-center'>
@@ -33,9 +32,12 @@ const Events = () => {
                     <button className='btn-secondary hover:text-brown'>Book Now</button>
                 </div>
             </div>
+            <div className='relative w-[555px] h-full basis-2/4'>
+                <Image src={"/images/ev1.jpg"} alt="" layout='fill'/>
+            </div>
         </div>
     </div>
   )
 }
 
-export default Events
+export default Events_Two
