@@ -15,7 +15,7 @@ const Pattern = () => {
     autoplaySpeed: 2500,
   };
   return (
-    <div className="w-full bg-cream_dark">
+    <div className="w-full bg-cream_dark pb-[70px]">
         <div className="container mx-auto">
       <div className="flex flex-col items-center mb-12 pt-12">
         <Title addClass={"text-brown text-[40px]"}>Our Patner’s</Title>
